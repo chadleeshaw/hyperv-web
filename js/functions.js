@@ -455,12 +455,12 @@ function moveVMModal() {
     });
 
     if (vms[0] !== 'undefined' || !vms[0]) {
-        if (vms[0].indexOf("se-") !== -1){
-            datacenter = "se";
-        } else if (vms[0].indexOf("sw-") !== -1){
-            datacenter = "sw";
-        } else if (vms[0].indexOf("tp-") !== -1){
-            datacenter = "sw";
+        if (vms[0].indexOf(".dc1") !== -1){
+            datacenter = "dc1";
+        } else if (vms[0].indexOf(".dc2") !== -1){
+            datacenter = "dc2";
+        } else if (vms[0].indexOf(".dc3") !== -1){
+            datacenter = "dc3";
         }
     }
 
